@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { ReactChild, ReactChildren } from 'react'
 
-export default function Button({children}) {
+interface AuxProps {
+  children: ReactChild | ReactChildren
+}
+
+export default function Button({ children }: AuxProps) {
 	return (
 		<button>
-			{children}
+			{ children }
 		</button>
 	)
 }
