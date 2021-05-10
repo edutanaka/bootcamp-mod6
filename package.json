@@ -11,6 +11,8 @@
   },
   "scripts": {
     "site": "yarn workspace @edutanaka/site",
-    "site:dev": "yarn site dev"
+    "site:dev": "yarn site dev",
+    "ui": "yarn workspace @edutanaka/ui",
+    "ui:dev": "yarn ui start"
   }
 }
