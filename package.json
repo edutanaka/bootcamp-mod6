@@ -12,7 +12,9 @@
   "scripts": {
     "site": "yarn workspace @edutanaka/site",
     "site:dev": "yarn site dev",
+    "site:build": "yarn site build",
     "ui": "yarn workspace @edutanaka/ui",
-    "ui:dev": "yarn ui start"
+    "ui:start": "yarn ui start",
+    "ui:build": "yarn ui build"
   }
 }
