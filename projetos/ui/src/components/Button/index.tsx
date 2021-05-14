@@ -1,13 +1,21 @@
-import React, { ReactChild, ReactChildren } from 'react'
+import React from 'react';
 
-interface AuxProps {
-  children: ReactChild | ReactChildren
+interface ButtonProps {
+  /**
+   * atributo do button
+   */
+  disabled?: boolean;
+  /**
+   * children que irá ser renderizado
+   */
+  children: React.ReactNode
 }
 
-export default function Button({ children }: AuxProps) {
-	return (
-		<button>
-			{ children }
-		</button>
-	)
+
+export default function Button({ disabled, children }: ButtonProps) {
+  return (
+    <button disabled={disabled}>
+      {children}
+    </button>
+  )
 }
